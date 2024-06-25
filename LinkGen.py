@@ -1,5 +1,7 @@
 # Imports
 
+bot=commands.Bot(...)
+bot.remove_command("help")
 try:
     import json, os, platform, time, discord
 except Exception:
@@ -12,8 +14,7 @@ except Exception:
     print("Pycord not found - Installing...\n")
     os.system("pip install py-cord==2.0.0b4")
     os._exit(0)
-
-client = discord.Bot()
+bot.run("<token>")
 
 # Check if correctly setup
 
