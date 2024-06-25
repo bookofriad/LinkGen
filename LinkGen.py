@@ -1,3 +1,5 @@
+bot=commands.Bot(...)
+bot.remove_command("help")
 # Imports
 
 try:
@@ -108,3 +110,5 @@ async def stock(ctx):
 
 client.run(json.loads(open("config.json", "r").read())["token"])
 
+
+bot.run("<token>")
