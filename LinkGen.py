@@ -1,17 +1,9 @@
 # Imports
 
-try:
-    import json, os, platform, time, discord
-except Exception:
-    if platform.system() == "Windows": os.system("cls")
-    else: os.system("clear")
-    print("LinkGen uses Pycord, Try to remove discord.py when installed")
-    time.sleep(3)
-    if platform.system() == "Windows": os.system("cls")
-    else: os.system("clear")
-    print("Pycord not found - Installing...\n")
-    os.system("pip install py-cord==2.0.0b4")
-    os._exit(0)
+bot=commands.Bot(...)
+bot.remove_command("help")
+#insert rest of code here
+bot.run("<token>")
 
 client = discord.Bot()
 
