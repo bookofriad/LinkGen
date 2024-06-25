@@ -1,5 +1,8 @@
 # Imports
-
+bot=commands.Bot(...)
+bot.remove_command("help")
+#insert rest of code here
+bot.run("<token>")
 try:
     import json, os, platform, time, discord
 except Exception:
